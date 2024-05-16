@@ -36,23 +36,10 @@ class HomeController extends Controller
 
         } else {
            return redirect('index');
-        //    $post = Post::where('active', 1)->paginate(4);
-        //    $limitedContents = $post->map(function ($post) {
-        //     return Str::limit($post->content, 100);
-
-        // }); 
-        // return view('index',compact("post","limitedContents"));
         }
     }
     public function indexxx()
     {
-        // $post = Post::where('active', 1)->paginate(4);
-        // $limitedContents = $post->map(function ($post) {
-        //     return Str::limit($post->content, 100);
-
-        // }); 
-        // return view('index',compact("post","limitedContents"));
-        //return redirect('/home');
         
         return view('home');
 
