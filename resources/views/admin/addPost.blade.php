@@ -87,7 +87,9 @@
 											<div class="col-md-6 col-sm-6 ">
 												<input type="text" id="title" required="required" class="form-control " name="title">
 											</div>
-										
+											@error('title')
+											{{ $message }}
+											@enderror
 										</div>
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="content">Content <span class="required">*</span>
@@ -95,7 +97,9 @@
 											<div class="col-md-6 col-sm-6 ">
 												<textarea id="content" name="content" required="required" class="form-control" >Contents</textarea>
 											</div>
-										
+											@error('content')
+											{{ $message }}
+											@enderror
 										</div>
 								
 									

@@ -85,7 +85,9 @@
 											<div class="col-md-6 col-sm-6 ">
 												<input type="text" id="first-name" required="required" class="form-control " name="name">
 											</div>
-										
+											@error('name')
+											{{ $message }}
+											@enderror
 										</div>
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="user-name">Username <span class="required">*</span>
@@ -93,14 +95,18 @@
 											<div class="col-md-6 col-sm-6 ">
 												<input type="text" id="user-name" name="username" required="required" class="form-control">
 											</div>
-										
+											@error('username')
+											{{ $message }}
+											@enderror
 										</div>
 										<div class="item form-group">
 											<label for="email" class="col-form-label col-md-3 col-sm-3 label-align">Email <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
 												<input id="email" class="form-control" type="email" name="email" required="required">
 											</div>
-										
+											@error('email')
+											{{ $message }}
+											@enderror
 										</div>
 
 										<div class="item form-group">
@@ -118,7 +124,9 @@
 											<div class="col-md-6 col-sm-6 ">
 												<input type="password" id="password" name="password" required="required" class="form-control">
 											</div>
-									
+											@error('password')
+											{{ $message }}
+											@enderror
 										</div>
 										<div class="ln_solid"></div>
 										<div class="item form-group">
